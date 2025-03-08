@@ -64,8 +64,8 @@ public class GameManager : MonoBehaviour
         if (Lives >= 0)
         {
             HUDObserverManager.PlayerVictory(false);
-            if(SceneManager.GetActiveScene().name == levelName) LoadLevel2();
-            if(SceneManager.GetActiveScene().name == "Level2") LoadLevel1();
+            if(SceneManager.GetActiveScene().name == "Nível1") LoadLevel2();
+            if(SceneManager.GetActiveScene().name == "Nível2") LoadLevel1();
         }
         else
         {
@@ -93,12 +93,12 @@ public class GameManager : MonoBehaviour
 
     public void LoadLevel1()
     {
-        SceneManager.LoadScene(levelName);
+        SceneManager.LoadScene("Nível1");
     }
     
     public void LoadLevel2()
     {
-        SceneManager.LoadScene("Level2");
+        SceneManager.LoadScene("Nível2");
     }
 
     public void LoadGameOver()
