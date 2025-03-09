@@ -93,12 +93,12 @@ public class GameManager : MonoBehaviour
 
     public void LoadLevel1()
     {
-        SceneManager.LoadScene("Nível1");
+        SceneManager.LoadScene("Nível2");
     }
     
     public void LoadLevel2()
     {
-        SceneManager.LoadScene("Nível2");
+        SceneManager.LoadScene("Nível1");
     }
 
     public void LoadGameOver()
